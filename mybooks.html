@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Realm - My Books</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       /* Add your custom styles here */
+        .custom-container {
+            width: 700px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .custom-heading {
+            text-align: center;
+            color: #333;
+        }
+
+        .custom-books-container {
+            width:900px;
+            height: 850px;
+            display: flex;
+            margin: 20px auto;
+            flex-wrap: wrap; /* Allow cards to wrap to the next line */
+            gap: 20px; /* Add some space between cards */   
+            justify-content:center; /* Center-align cards horizontally */
+            padding: 20px 0; /* Add some padding for better spacing */
+        }
+
+        .custom-book {
+            width: calc(33.33% - 20px);
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .custom-book img {
+            width: 100%;
+            height: 200px; /* Set a fixed height for the images */
+            object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+            border-bottom: 1px solid #ddd;
+        }
+
+        .custom-book-details {
+            padding: 10px;
+        }
+
+        .custom-book-title {
+            font-size: 18px;
+            color: #333;
+            margin: 5px 0;
+            font-weight: bold; /* Make the title stand out */
+        }
+
+        .custom-book-author {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .custom-completion-ring {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+        }
+
+        .custom-completion-ring .circle {
+            fill: none;
+            stroke: #3498db;
+            stroke-width: 4;
+            stroke-linecap: round;
+        }
+
+        .custom-completion-ring .circle-bg {
+            fill: none;
+            stroke: #e6e6e6;
+            stroke-width: 4;
+        }
+
+        .custom-completion-ring .percentage {
+            fill: #3498db;
+            font-size: 20px;
+            dominant-baseline: middle;
+            text-anchor: middle;
+        }
+
+        @media screen and (max-width: 768px) {
+            .custom-book {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media screen and (max-width: 576px) {
+            .custom-book {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="home.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="community.html">Community</a>
+            <a href="mybooks.html">My Books</a>
+        </div>
+
+        <h1 class="custom-heading">My Books</h1>
+
+        <div class="divider"></div>
+        <h2 style="font-family: 'Brush Script MT', cursive; font-size: 45px; font-weight: lighter; color: #007bff;">Currently Reading</h2>
+        <div class="divider"></div>
+
+
+        <div class="custom-books-container">
+            <div class="custom-book">
+                <img src="mybooks/book1.jpg" alt="Book 1">
+                <div class="custom-book-details">
+                    <h2 class="custom-book-title">Psychology of Money</h2>
+                    <p class="custom-book-author">Morgan Housel</p>
+                    <div class="custom-completion-ring">
+                        <svg class="progress-ring" width="100" height="100">
+                            <circle class="circle-bg" cx="50" cy="50" r="40"></circle>
+                            <circle class="circle" cx="50" cy="50" r="40"></circle>
+                            <text x="50" y="50" class="percentage">30%</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-book">
+                <img src="mybooks/book2.jpg" alt="Book 2">
+                <div class="custom-book-details">
+                    <h2 class="custom-book-title">Mindset</h2>
+                    <p class="custom-book-author">Carol Dweck</p>
+                    <div class="custom-completion-ring">
+                        <svg class="progress-ring" width="100" height="100">
+                            <circle class="circle-bg" cx="50" cy="50" r="40"></circle>
+                            <circle class="circle" cx="50" cy="50" r="40"></circle>
+                            <text x="50" y="50" class="percentage">50%</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-book">
+                <img src="mybooks/sapiens.png" >
+                <div class="custom-book-details">
+                    <h2 class="custom-book-title">Sapiens</h2>
+                    <p class="custom-book-author">Yuval Noval Harari</p>
+                    <div class="custom-completion-ring">
+                        <svg class="progress-ring" width="100" height="100">
+                            <circle class="circle-bg" cx="50" cy="50" r="40"></circle>
+                            <circle class="circle" cx="50" cy="50" r="40"></circle>
+                            <text x="50" y="50" class="percentage">20%</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-book">
+                <img src="mybooks/book4.jpg" alt="Book 4">
+                <div class="custom-book-details">
+                    <h2 class="custom-book-title">Quiet</h2>
+                    <p class="custom-book-author">Susan Cain </p>
+                    <div class="custom-completion-ring">
+                        <svg class="progress-ring" width="100" height="100">
+                            <circle class="circle-bg" cx="50" cy="50" r="40"></circle>
+                            <circle class="circle" cx="50" cy="50" r="40"></circle>
+                            <text x="50" y="50" class="percentage">60%</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-book">
+                <img src="mybooks/book5.png" alt="Book 5">
+                <div class="custom-book-details">
+                    <h2 class="custom-book-title">The Kite Runner</h2>
+                    <p class="custom-book-author">Khalid Hosseini</p>
+                    <div class="custom-completion-ring">
+                        <svg class="progress-ring" width="100" height="100">
+                            <circle class="circle-bg" cx="50" cy="50" r="40"></circle>
+                            <circle class="circle" cx="50" cy="50" r="40"></circle>
+                            <text x="50" y="50" class="percentage">40%</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-book">
+                <img src="mybooks/book6.jpg" alt="Book 6">
+                <div class="custom-book-details">
+                    <h2 class="custom-book-title">The art of being alone</h2>
+                    <p class="custom-book-author">Renuka Garvrani</p>
+                    <div class="custom-completion-ring">
+                        <svg class="progress-ring" width="100" height="100">
+                            <circle class="circle-bg" cx="50" cy="50" r="40"></circle>
+                            <circle class="circle" cx="50" cy="50" r="40"></circle>
+                            <text x="50" y="50" class="percentage">80%</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="divider" style="margin-bottom: 40px;"></div>
+
+
+
+    <script src="script.js" defer></script>
+</body>
+</html>

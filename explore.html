@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore - Book Realm</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        .genre-heading {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            background: linear-gradient(to right, #2980b9, #6dd5fa);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .genre-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+        .favorite-genres {
+            margin-top: 20px;
+            text-align: center;
+        }
+        
+        .genre-button {
+            background-color: #45d5c6; 
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition-duration: 0.4s;
+        }
+        
+        .genre-button:hover {
+            background-color: #1c4fc6; 
+        }
+        .authors-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        
+        .author {
+            text-align: center;
+            margin-bottom: 20px;
+            width: 200px; 
+        }
+        
+        .author img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .author h3 {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            font-family: 'Montserrat', sans-serif; 
+        }
+        .auheading {
+            margin-top: 30px;
+            font-size: 45px;
+        }
+           
+    </style>
+</head>
+<body>
+    
+    
+    <div class="container">
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="community.html">Community</a>
+            <a href="mybooks.html">My Books</a>
+        </div>
+
+        <div class="title">Explore Books by Genre</div>
+        <div class="favorite-genres">
+            <button class="genre-button">Self Help</button>
+            <button class="genre-button">Educational</button>
+            <button class="genre-button">Comics</button>
+            <button class="genre-button">Fiction</button>
+        </div>
+
+        
+        <div class="genre-heading">Fiction</div>
+        <div class="genre-cards">
+            <div class="book-card">
+                
+                    <img src="covers/fiction/thealchemist.jpg">
+                
+            </div>
+
+            <div class="book-card">
+                <img src="covers/fiction/thegreatgatsby.jpg">
+            </div>
+            <div class="book-card">
+                <img src="covers/fiction/theartofbeingalong.jpg">
+            </div>
+    
+            <div class="book-card">
+                <img src="covers/fiction/tokillamockingbird.png">
+            </div>
+        </div>
+
+    
+
+        
+        <div class="genre-heading">Educational</div>
+        <div class="genre-cards">
+          
+            <div class="book-card">
+                
+                    <img src="covers/educational/freakonomics.jpg" alt="Freakonomics">
+                
+            </div>
+
+            <div class="book-card">
+                
+                    <img src="covers/educational/thinkingfastandslow.jpg" alt="Thinking, Fast and Slow">
+                
+            </div>
+
+            <div class="book-card">
+                <img src="covers/educational/livewired.jpg">
+            </div>
+
+            <div class="book-card">
+                
+                    <img src="covers/educational/theselfishgene.jpg" alt="The Selfish Gene">
+                
+            </div>
+        </div>
+
+        
+        <div class="genre-heading">Comics</div>
+        <div class="genre-cards">
+            <div class="book-card">
+                
+                    <img src="covers/comics/maus.jpg" alt="Maus">
+                
+            </div>
+            
+            <div class="book-card">
+                
+                    <img src="covers/comics/saga.jpg" alt="Saga">
+                
+            </div>
+            
+            <div class="book-card">
+                
+                    <img src="covers/comics/wolverine.jpeg" alt="Wolverine">
+                
+            </div>
+
+            <div class="book-card">
+                <img src="covers/comics/captainamerica.jpg">
+            </div>
+        </div>
+
+        <div class="genre-heading">Self help</div>
+        <div class="genre-cards">
+            <div class="book-card">
+                <img src="covers/self help/makeyourbed.jpg">
+            </div>
+            <div class="book-card">
+                <img src="covers/self help/howtowinfriends.jpg">
+            </div>
+            <div class="book-card">
+                <img src="covers/self help/essentialism.png">
+            </div>
+            <div class="book-card">
+                <img src="covers/self help/thepsychologyofmoney.png">
+            </div>
+        
+        
+
+
+        
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="authors-heading">
+        <h2 class="auheading">Authors</h2>
+    </div>
+    
+    <div class="authors-list">
+        <div class="author">
+            <img src="authors/author1.jpg" alt="Brene Brown">
+            <h3>Brene Brown</h3>
+        </div>
+        <div class="author">
+            <img src="authors/author2.jpg" alt="James Clear">
+            <h3>James Clear</h3>
+        </div>
+        <div class="author">
+            <img src="authors/author3.jpg" alt="J.K. Rowling">
+            <h3>J.K. Rowling</h3>
+        </div>
+        <div class="author">
+            <img src="authors/author4.jpg" alt="Ankur Warikoo">
+            <h3>Ankur Warikoo</h3>
+        </div>
+    </div>
+    
+    
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
